@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS:
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(242, 93, 162);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(204, 48, 31);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        .especial {
+            background-color: rgb(238, 170, 181);
+        }
+
+        .especial::before {
+            content: ' ↞ ';
+        }
+
+        .especial::after {
+            content: ' ↠ ';
+
+        }
+
+        p:hover {
+            text-decoration: underline;
+            color: rgb(243, 99, 197);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="especial">Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoEmVídeo</a></li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea molestias maiores voluptates placeat. Eaque, perspiciatis ab? Laudantium veniam asperiores quia dolore inventore ratione illo in autem molestias maxime, voluptas mollitia?</p>
+</body>
+</html>

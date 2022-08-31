@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: rgba(100, 91, 91, 0.753);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.444);
+        }
+
+        #titulo {
+            color: purple;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.335);
+
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article >  aside {
+            background-color: rgb(151, 145, 145);
+        }
+        nav {
+            background-color: dimgray;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.523);
+
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+        
+        nav > a:hover {
+            color:rgba(0, 0, 0, 0.772);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"> 
+            <p>Esportes Crime Religião </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>As últimas do esporte, crime e religião</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eum consequatur ad necessitatibus, earum a laborum neque quam quod ipsa, illum natus soluta sed iste, molestias exercitationem accusamus nesciunt pariatur!</p>
+                <aside>
+                    <p>Artigo escrito por: L.</p>
+                </aside>
+            </article>
+            <article>
+                <h2>EngHaw</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nobis sit labore, quia omnis fugiat laudantium magni dolor ipsa atque amet distinctio optio laboriosam quae enim sunt laborum saepe eius.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+Tudo que em HTML é Id = Em CSS é # (só pode um elemento)
+
+Tudo que em HTML é Class = Em CSS é . (pode vários elementos)
+
+O identificador não necessariamente precisa do nome do seletor (ex: h1#principal pode ser simplesmente o # + nome da id, #principal).
+*/
+body {
+    background-color: rgba(249, 166, 236, 0.412);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color:#0c9143; /*Essa cor que será usada no #principal, pois o # sempre herda o que veio da camada acima*/
+}
+h1#principal {
+    text-align: center;
+    background-color: #b16278a0; /*O .destaque amarelo não pega aqui, por causa da conf do b.c do #, POIS O ID SOBREPOẼ AS CONFIGURAÇÕES DE CLASSE! 
+    <h1 id="principal" class="destaque">Criando sites com HTML e CSS</h1> é um exemplo de que pode misturar classe e id*/
+    font-weight: bolder;
+}
+h2 {
+    color:#C82F58;
+}
+.basico {
+    color: rgba(22, 130, 22, 0.515);
+    font-weight: bold;
+}
+.intermediario {
+    color: rgb(130, 123, 22);
+    font-weight: bold;
+}
+.avancado {
+    color: rgba(130, 22, 22, 0.515);
+    font-weight: bold;
+}
+.destaque {
+    background-color: #c3c36588;
+}

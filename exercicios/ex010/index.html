@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks e âncoras</title>
+</head>
+<body>
+    <h1>Utilizando links externos</h1>
+    <p>Links externos são inseridos com a tag a, e o mais aconselhável é que esse link abra em uma nova página, e não na página atual do site. <br>Podemos fazer isso com target e o parâmeto _blank, adicionando também a referência, rel external.<br>Exemplos:</p>
+    <p>Você pode acessar o meu <a href="https://www.last.fm/user/laxl91" target="_blank" rel="external">perfil do lastfm</a>.</p>
+    <p>E também, o <a href="https://open.spotify.com/user/laxl91" target="_blank" rel="external">meu perfil no spotify.</a></p>
+
+    <h1>Utilizando links internos</h1>
+    <p>Antes de ter um link interno, temos que ter outras páginas.</p>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next"> segunda página.</a></p>
+    <p>Você também pode acessar nossa <a href="notícias/pag003.html" rel="next">página de notícias</a>.</p>
+    <h2>../ e ./ e pasta/(arquivo.formato)</h2>
+    <p>O ../ retorna para a pasta anterior.</p>
+    <p>O ./significa a própria pasta do arquivo atual.</p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/cap10.pdf" download="cap10.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+        <li><a href="livro/cap10.zip" download="cap10.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>
