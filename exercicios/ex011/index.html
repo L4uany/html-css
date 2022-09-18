@@ -9,14 +9,13 @@
 <body>
     <h1>Imagem dinâmica</h1>
     <p>Tente abrir essa página em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
-    <p>A base é a imagem padrão que você quer carregar. Acima dela, você vai colocando as ordens das imagens source media que você quer que apareça. Ex: Grande (padrão), logo acima, m, logo acima da m, p.</p>
     <p>Tag picture, tag source media.</p>
     <picture>
         <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="imagem flexível">
     </picture>
-
+    <p>A base é a imagem padrão que você quer carregar. Acima dela, você vai colocando as ordens das imagens source media que você quer que apareça. Ex: Grande (padrão), logo acima, a imagem média, logo acima da média, a pequena.</p>
     <h1>Reproduzindo áudios</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
     <audio preload="metadata" autoplay controls>
