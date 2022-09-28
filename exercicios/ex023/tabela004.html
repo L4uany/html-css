@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Aline Woodsen</td>
+                <td>Mean Girls</td>
+                <td>Jennifer's Body</td>
+                <td>Clueless</td>
+            </tr>
+            <tr>
+                <td>Bianca Nunes</td>
+                <td>Alien</td>
+                <td>The Exorcist</td>
+                <td>Interstellar</td>
+            </tr>
+            <tr>
+                <td>Clarisse Silva</td>
+                <td>Back to the Future</td>
+                <td>Dead Poets Society</td>
+                <td>Into the Wild</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Alan Ferreira</td>
+                <td>Django</td>
+                <td>The Exterminator</td>
+                <td>Rambo</td>
+            </tr>
+            <tr>
+                <td>Breno Souza</td>
+                <td>Pulp Fiction</td>
+                <td>Eyes Wide Shut</td>
+                <td>Get Out</td>
+            </tr>
+            <tr>
+                <td>Carlos Santana</td>
+                <td>X</td>
+                <td>Mamma Mia!</td>
+                <td>Moulin Rouge!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
