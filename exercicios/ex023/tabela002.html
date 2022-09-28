@@ -25,7 +25,7 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgba(194, 190, 190, 0.855);
+            background-color: rgba(194, 190, 190, 0.900);
         }
 
         a {
@@ -51,7 +51,16 @@
         }
 
         thead, tfoot {
-            background-color: rgba(194, 190, 190, 0.598);
+            background-color: rgba(47, 47, 47, 0.912);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n-1) { /* Odd, ímpar */
+            background-color: rgba(122, 119, 119, 0.626);
+        }
+
+        tbody > tr:nth-child(even) { /* 2n, par */
+            background-color: rgba(161, 158, 158, 0.276);
         }
         </style>
 </head>
