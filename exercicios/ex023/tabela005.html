@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 450px;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 7px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 7px;
+        }
+
+        .cnome {
+            background-color: rgba(127, 255, 212, 0.261);
+        }
+
+        .csexo {
+            background-color: rgba(234, 255, 127, 0.261);
+        }
+        .cidade {
+            background-color: rgba(127, 195, 255, 0.261);
+        }
+
+        .cprof {
+            background-color: rgba(127, 255, 142, 0.261);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo">
+        <col class="cidade" span="2">
+        <!-- <col class="cprof"> --> 
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Astrônoma</td>
+        </tr>
+        <tr>
+            <td>Lana</td>
+            <td>F</td>
+            <td>36</td>
+            <td>Artista</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Filósofa</td>
+        </tr>
+        <tr>
+            <td>Rodrigo</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Físico</td>
+        </tr>
+        <tr>
+            <td>Thiago</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Historiador</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Biológo</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Biológo</td>
+        </tr>
+    </table>
+</body>
+</html>
